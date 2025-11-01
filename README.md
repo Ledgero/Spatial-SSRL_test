@@ -60,7 +60,7 @@ Five tasks are currently formulated in the framework, requiring only ordinary RG
 </p>
 
 ## 📊 Results
-We apply our Spatial-SSRL paradigm on Qwen2.5-VL-3B and Qwen2.5-VL-7B and the experimental results across seven spatial understanding benchmarks are shown below.
+We train Qwen2.5-VL-3B and Qwen2.5-VL-7B with our Spatial-SSRL paradigm and the experimental results across seven spatial understanding benchmarks are shown below.
 <p style="text-align: center;"> 
   <img src="assets/exp_result.png" alt="Pipeline" width="100%"> 
 </p>
