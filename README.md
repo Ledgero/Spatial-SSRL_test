@@ -69,6 +69,7 @@ We train Qwen2.5-VL-3B and Qwen2.5-VL-7B with our Spatial-SSRL paradigm and the 
 To directly experience <strong>Spatial-SSRL-7B</strong>, you can try it out on huggingface (link)!
 </p>
 Here we provide a code snippet for you to start a simple trial of <strong>Spatial-SSRL-7B</strong> on your own machine. You can download the model from 🤗<a href="https://huggingface.co/internlm/Spatial-SSRL-7B">Spatial-SSRL-7B Model</a > before your trial!
+</p>
 
 ```python
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
