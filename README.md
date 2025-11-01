@@ -38,12 +38,12 @@ Reinforcement Learning
 
 ## 🌈 Overview
 We are thrilled to introduce <strong>Spatial-SSRL</strong>, a novel self-supervised RL paradigm aimed at enhancing LVLM spatial understanding. 
-By optimizing Qwen2.5-VL-7B with Spatial-SSRL, the model exhibits stronger spatial intelligence in both image and video settings.
+By optimizing Qwen2.5-VL-7B with Spatial-SSRL, the model exhibits stronger spatial intelligence across seven spatial understanding benchmarks in both image and video settings.
 </p>
 <p style="text-align: center;"> 
   <img src="assets/teaser_1029final.png" alt="Teaser" width="100%"> 
 </p>
-Spatial-SSRL is a <strong>lightweight</strong> tool-free framework that is natually compatible with the RLVR paradigm and easy to extend to a multitude of pretext tasks.
+Spatial-SSRL is a <strong>lightweight</strong> tool-free framework that is natually compatible with the RLVR training paradigm and easy to extend to a multitude of pretext tasks.
 Five tasks are currently formulated in the framework, requiring only ordinary RGB and RGB-D images. <strong>And we welcome you to join Spatial-SSRL with effective pretext tasks to further strengthen the capabilities of LVLMs!</strong>
 
 <p style="text-align: center;"> 
