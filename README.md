@@ -51,10 +51,10 @@ Five tasks are currently formulated in the framework, requiring only ordinary RG
 </p>
 
 ## 💡 Highlights
-- 🔥**Highly Scalable:** Spatial-SSRL uses ordinary raw RGB and RGB-D images instead of richly-annotated public datasets or manual labels for data curation, making it highly scalable.
-- 🔥**Cost-effective:** Avoiding the need for human labels or API calls for general LVLMs throughout the entire pipeline endows Spatial-SSRL with cost-effectiveness.
-- 🔥**Lightweight:** Prior approaches for spatial understanding heavily rely on annotation of external tools, incurring inherent errors in training data and additional cost. In constrast, Spatial-SSRL is completely tool-free and can easily be extended to more self-supervised tasks. 
-- 🔥**Naturally Verifiable:** Intrinsic supervisory signals determined by pretext objectives are naturally verifiable, aligning Spatial-SSRL well with RLVR.
+- 🔥 **Highly Scalable:** Spatial-SSRL uses ordinary raw RGB and RGB-D images instead of richly-annotated public datasets or manual labels for data curation, making it highly scalable.
+- 🔥 **Cost-effective:** Avoiding the need for human labels or API calls for general LVLMs throughout the entire pipeline endows Spatial-SSRL with cost-effectiveness.
+- 🔥 **Lightweight:** Prior approaches for spatial understanding heavily rely on annotation of external tools, incurring inherent errors in training data and additional cost. In constrast, Spatial-SSRL is completely tool-free and can easily be extended to more self-supervised tasks. 
+- 🔥 **Naturally Verifiable:** Intrinsic supervisory signals determined by pretext objectives are naturally verifiable, aligning Spatial-SSRL well with RLVR.
 <p style="text-align: center;"> 
   <img src="assets/comparison_1029final.png" alt="Teaser" width="100%"> 
 </p>
