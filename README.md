@@ -35,7 +35,8 @@ Reinforcement Learning
 </div>
 
 ## 📢 News
-
+- 🚀 [11/02/2025] We have released the Spatial-SSRL 🏠[repository](https://github.com/InternLM/Spatial-SSRL)
+- 
 ## 🌈 Overview
 We are thrilled to introduce <strong>Spatial-SSRL</strong>, a novel self-supervised RL paradigm aimed at enhancing LVLM spatial understanding. 
 By optimizing Qwen2.5-VL-7B with Spatial-SSRL, the model exhibits stronger spatial intelligence across seven spatial understanding benchmarks in both image and video settings.
@@ -131,3 +132,14 @@ pip install -r requirements.txt
 
 ```
 Start your evaluation by referring to the tutorials in <a href="https://github.com/InternLM/Spatial-SSRL/blob/main/evaluation/Eval.md">Eval.md</a >
+
+## 👨‍💻 Todo
+- [ ] Release the training code.
+
+## 📄 License
+![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg) ![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg) 
+
+The data and code are intended and licensed for research use only.
+
+## ❤️ Acknowledgement
+We extend our sincere gratitude to <a href="https://github.com/open-compass/VLMEvalKit">VLMEvalkit</a >, the powerful toolkit to evaluate a vast range of LMMs!
