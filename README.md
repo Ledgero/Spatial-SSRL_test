@@ -36,7 +36,8 @@ Reinforcement Learning
 
 ## 📢 News
 - 🚀 [11/02/2025] We have released the Spatial-SSRL 🏠[repository](https://github.com/InternLM/Spatial-SSRL)
-- 
+
+  
 ## 🌈 Overview
 We are thrilled to introduce <strong>Spatial-SSRL</strong>, a novel self-supervised RL paradigm aimed at enhancing LVLM spatial understanding. 
 By optimizing Qwen2.5-VL-7B with Spatial-SSRL, the model exhibits stronger spatial intelligence across seven spatial understanding benchmarks in both image and video settings.
