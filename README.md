@@ -128,6 +128,7 @@ Prepare your environment:
 ```bash
 git clone https://github.com/InternLM/Spatial-SSRL.git
 conda create -n spatialssrl python==3.10
+conda activate spatialssrl
 cd Spatial-SSRL/evaluation
 pip install -r requirements.txt
 
