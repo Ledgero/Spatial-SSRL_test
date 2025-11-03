@@ -1,1 +1,1 @@
-The file `vsi_bench.json` for data overview will be updated soon.
+Download `arkitscenes.zip`, `scannet.zip`, and `scannetpp.zip` from  [Huggingface](https://huggingface.co/datasets/nyu-visionx/VSI-Bench) to this directory before evaluation.
