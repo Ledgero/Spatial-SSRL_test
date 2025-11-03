@@ -37,7 +37,7 @@
 
 ## 📢 News
 - 🚀 [2025/11/03] Now you can try out Spatial-SSRL-7B on [🤗Spatial-SSRL Space](https://huggingface.co/spaces/yuhangzang/Spatial-SSRL).
-- 🚀 [2025/11/03] We have released the [Spatial-SSRL-7B Model](https://huggingface.co/internlm/Spatial-SSRL-7B)，and [Spatial-SSRL-81k Dataset](https://huggingface.co/datasets/internlm/Spatial-SSRL-81k).
+- 🚀 [2025/11/03] We have released the [Spatial-SSRL-7B Model](https://huggingface.co/internlm/Spatial-SSRL-7B), and [Spatial-SSRL-81k Dataset](https://huggingface.co/datasets/internlm/Spatial-SSRL-81k).
 - 🚀 [2025/11/02] We have released the Spatial-SSRL [repository](https://github.com/InternLM/Spatial-SSRL).
 
   
