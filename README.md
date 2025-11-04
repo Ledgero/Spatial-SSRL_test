@@ -135,7 +135,7 @@ conda activate spatialssrl
 cd Spatial-SSRL/evaluation
 pip install -r requirements.txt
 
-# Suggested
+# Recommended
 pip install flash-attn --no-build-isolation
 ```
 Start your evaluation by referring to the tutorials in <a href="https://github.com/InternLM/Spatial-SSRL/blob/main/evaluation/Eval.md">Eval.md</a >
