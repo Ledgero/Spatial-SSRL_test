@@ -154,8 +154,8 @@ Start your evaluation by referring to the tutorials in <a href="https://github.c
 ## ✒️Citation
 If you find this project useful, please kindly cite:
 ```
-@article{liu2025spatialssrl,
-  title={Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised Reinforcement Learning}, 
+@article{liu2025spatial,
+  title={Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised Reinforcement Learning},
   author={Liu, Yuhong and Zhang, Beichen and Zang, Yuhang and Cao, Yuhang and Xing, Long and Dong, Xiaoyi and Duan, Haodong and Lin, Dahua and Wang, Jiaqi},
   journal={arXiv preprint arXiv:2510.27606},
   year={2025}
