@@ -139,7 +139,7 @@ import torch
 model_path = "internlm/Spatial-SSRL-Qwen3VL-4B" #You can change it to your own local path if deployed already
 
 #Change the path of the input image
-img_path = "assets/eg1.jpg"
+img_path = "examples/eg_qwen3vl.jpg"
 
 #Change your question here
 question = "Question: Consider the real-world 3D locations and orientations of the objects. If I stand at the man's position facing where it is facing, is the menu on the left or right of me?\nOptions:\nA. on the left\nB. on the right\n"
