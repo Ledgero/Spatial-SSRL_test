@@ -128,6 +128,67 @@ output_text = processor.batch_decode(
 print("Model Response:", output_text)
 ```
 
+Here we provide a code snippet for you to start a simple trial of <strong>Spatial-SSRL-Qwen3VL-4B</strong> on your own device. You can download the model from 🤗<a href="https://huggingface.co/internlm/Spatial-SSRL-Qwen3VL-4B">Spatial-SSRL-Qwen3VL-4B Model</a > before your trial!
+</p>
+
+```python
+from transformers import AutoProcessor, AutoModelForImageTextToText #transformers==4.57.1
+from qwen_vl_utils import process_vision_info #0.0.14
+import torch
+
+model_path = "internlm/Spatial-SSRL-Qwen3-VL-4B" #You can change it to your own local path if deployed already
+
+#Change the path of the input image
+img_path = "assets/eg1.jpg"
+
+#Change your question here
+question = "Question: Consider the real-world 3D locations and orientations of the objects. If I stand at the man's position facing where it is facing, is the menu on the left or right of me?\nOptions:\nA. on the left\nB. on the right\n"
+
+question += "Please select the correct answer from the options above. \n"
+#We recommend using the format prompt to make the inference consistent with training
+format_prompt = "You FIRST think about the reasoning process as an internal monologue and then provide the final answer. The reasoning process MUST BE enclosed within <think> </think> tags. The final answer MUST BE put in \\boxed{}."
+
+model = AutoModelForImageTextToText.from_pretrained(
+    model_path, torch_dtype=torch.float16, device_map='auto', attn_implementation='flash_attention_2'
+    )
+processor = AutoProcessor.from_pretrained(model_path)
+
+messages = [
+    {
+        "role": "user",
+        "content": [
+            {
+                "type": "image",
+                "image": img_path,
+            },
+            {"type": "text", "text": question + format_prompt},
+        ],
+    }
+]
+
+text = processor.apply_chat_template(
+    messages, tokenize=False, add_generation_prompt=True
+)
+image_inputs, video_inputs = process_vision_info(messages)
+inputs = processor(
+    text=[text],
+    images=image_inputs,
+    videos=video_inputs,
+    padding=True,
+    return_tensors="pt",
+)
+inputs = inputs.to("cuda")
+
+generated_ids = model.generate(**inputs, max_new_tokens=4096, do_sample=False)
+generated_ids_trimmed = [
+    out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
+]
+output_text = processor.batch_decode(
+    generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
+)
+print("Model Response:", output_text[0])
+```
+
 ## 🛠️ Evaluation
 Prepare your environment:
 ```bash
